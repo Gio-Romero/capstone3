@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>View Profile</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <img class="sbLogo" src="../images/sbLogo.png" alt="sbLogo">
+            <nav class="navbar navbar-expand-md ">
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-dark"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                    <ul class="nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/messageBoard.html">Message Board</a>
+                        </li>
+                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sign-up.html">Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/profiles.html">View Profiles</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+
+
+    <main class="mb-5 someonesProfile">
+        <!-- profile lookup -->
+        <div class="container-fluid profile-container">
+            <!-- loggOut button -->
+            <div class="d-flex justify-content-end mb-5">
+                <a href="../pages/myProfile.html"><button class="btn btn-outline-dark myProfile mr-3">My Profile</button></a>
+                <button class="btn btn-outline-dark logBtn mr-5">Log Out</button>
+            </div>
+        </div>
+        <!-- profile img -->
+        <div class="row justify-content-center">
+            <div>
+                <img id="profile-img" src="" alt="profileImg">
+            </div>
+        </div>
+
+        <!-- profile name,age,assignment -->
+        <div class="row  d-flex flex-column text-center">
+            <p class="text-capitalize mb-0"><b class="profile-name"></b>
+                <span class="badge badge-primary badge-pill ml-1 mt-2 profile-age"></span></p>
+            <p class="mb-0 profile-assignment text-capitalize"></p>
+            <p><span class="profile-block mr-1"></span> block</p>
+        </div>
+        <hr>
+
+        <!-- bio -->
+        <div class="d-flex justify-content-center mt-5">
+                <div class="bio text-center w-75">
+                    <h2 class="text-center ml-4">About Me:</h2>
+                    <p class="bio-text"></p>
+                </div>
+            </div>
+ <!-- my Goals -->
+ <div class="row justify-content-around my-5 mx-5 mx-md-0" id="cardContainer">
+                
+        <div class="card card-list mb-3 col-12 col-md-3 p-0 mr-1 goals">
+            <h3 class="card-header text-center">
+                My Goals
+            </h3>
+            <ol class="list-group list-group-flush cardInfo" data-name="goals">
+            </ol>
+        </div>
+        <!-- craft -->
+        <div class="card card-list mb-3 col-12 col-md-3 p-0 mr-1 craft">
+            <h3 class="card-header text-center">
+                Craft
+            </h3>
+            <ol class="list-group list-group-flush cardInfo" data-name="craft">
+            </ol>
+        </div>
+        <!-- my Books -->
+        <div class="card card-list mb-3 col-12 col-md-3 p-0 mr-1 books">
+            <h3 class="card-header text-center">
+                My Books
+            </h3>
+            <ol class="list-group list-group-flush cardInfo" data-name="books">
+            </ol>
+        </div>
+        <!-- groups -->
+        <div class="card card-list mb-3 col-12 col-md-3 p-0 mr-1 groups">
+            <h3 class="card-header text-center">
+                My Groups
+            </h3>
+            <ol class="list-group list-group-flush cardInfo" data-name="groups">
+            </ol>
+        </div>
+        <!-- college -->
+        <div class="card card-list mb-3 col-12 col-md-3 p-0 mr-1 college">
+            <h3 class="card-header text-center">
+                College Classes
+            </h3>
+            <ol class="list-group list-group-flush cardInfo" data-name="college">
+            </ol>
+        </div>
+
+    </div>
+
+
+        <!-- calendar -->
+        <div class="d-flex justify-content-center col-12">
+                <div class="calendar">
+                    <div class="d-flex justify-content-between">
+                        <p class="prev">Prev</p>
+                        <p class="next">Next</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <b class="calMonth "></b>
+                        <b class="calYear ml-3"></b>
+                    </div>
+                    <table class="">
+                        <thead class="text-center calHead">
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </thead>
+                        <tbody class="calBody">
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        <!-- <div class="form-row justify-content-center my-5 "> -->
+            <div class="d-flex flex-column align-items-center m-3">
+                <label class="msgLabel "></label>
+                <textarea class="w-50" cols="70" rows="5" maxlength="180" id="send-a-msg" placeholder="180 character max"></textarea>
+                <button class="btn btn-primary mt-2" id="send-a-msg-btn" data-target="#borrowBook"
+                    data-toggle="modal">Post Message</button>
+            </div>
+        <!-- </div> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="lessons" tabindex="-1" role="dialog" aria-labelledby="postLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="post">Connecting...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- <div class="slotInfo"></div> -->
+                        <div class="m-3 session">
+                            <p class="session-info">You would like to meet <span
+                                    class="mentor font-weight-bold text-capitalize"></span>
+                                this <span class="modalDay font-weight-bold"></span> from <span
+                                    class="modalTime font-weight-bold"></span> for lessons on
+                                <span class="modalCraft font-weight-bold"></span></p>
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="submit" id="connect" data-dismiss="modal"
+                                class="btn btn-primary connect">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="borrowBook" tabindex="-1" role="dialog" aria-labelledby="postLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                            <div class="slotInfo"></div>
+                        <h4 class="msgSending"></h4>
+                        <p>Would you like to borrow <span class="book font-weight-bold text-capitalize"></span>
+                            from <span class="bookLender font-weight-bold text-capitalize"></span>?</p>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button id="accept" data-dismiss="modal" class="btn btn-primary">Accept</button>
+                            <button data-dismiss="modal" class="btn btn-primary btn-outline-secondary">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </main>
+    <footer id="sbFooter">
+            <p class="text-white bg-info text-center">&copy 2023 StudyBuddy, inc-All rights reserved</p>
+        </footer>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+ 
+    <script src="../js/memory.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/viewProfile.js"></script>
+</body>
+
+</html>

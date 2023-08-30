@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head with links to Bootstrap,fontawesome,and CSS file  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign-up</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light mb-0">
+            <img class="sbLogo" src="../images/sbLogo.png" alt="sbLogo">
+            <nav class="navbar navbar-expand-md ">
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-dark"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                    <ul class="nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/messageBoard.html">Message Board</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/profiles.html">View Profiles</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </nav>
+        <div class="d-flex justify-content-end">
+            <a href="../pages/myProfile.html"><button class="btn btn-outline-dark myProfile mr-3">My
+                    Profile</button></a>
+            <button class="btn btn-outline-dark logBtn mr-5">Log Out</button>
+        </div>
+    </header>
+
+    <!-- main container for content -->
+    <main class="mb-5">
+        <!-- container for main logo -->
+        <!-- <div class="container-fluid mb-5"> -->
+
+        <!-- text describing page -->
+        <div class="d-flex my-5 justify-content-center">
+            <button class="btn btn-primary btn-lg mr-5 mentor title">Mentor</button>
+            <button class="btn btn-primary btn-lg ml-5 student title">Student</button>
+
+        </div>
+        <h2 class="mentorORstudent text-center text-info">Mentor</h2>
+        <!-- </div> -->
+
+
+        <!-- form -->
+        <form id="contactForm" class="ml-2 ml-md-0">
+            <!-- form row holds 6 items -->
+            <div class="form-row justify-content-center mb-5">
+                <!-- first item takes 6 columns -->
+
+                <div class="col-md-8 m-3">
+                    <label class="headerTitle">Name:</label>
+                    <div class="d-flex">
+                        <input type="text" class="form-control mr-1" id="firstname" name="firstname" placeholder="First"
+                            required>
+                        <input type="text" class="form-control ml-1" id="lastname" name="lastname" placeholder="Last"
+                            required>
+                    </div>
+                </div>
+
+                <div class="col-md-8 m-3">
+                    <label class="headerTitle">Email/Password:</label>
+                    <div class="d-flex">
+                        <input type="text" class="form-control mr-1" id="email" name="email" placeholder="@" required>
+                        <input type="password" class="form-control ml-1" id="password" name="password"
+                            placeholder="(5+ Characters)" required>
+                    </div>
+                </div>
+
+
+                <div class="col-md-8 m-3">
+                    <label class="headerTitle">DOB/Block/Assignment:</label>
+                    <div class="d-flex">
+                        <input type="text" class="form-control mr-1" name="dob" id="dob" placeholder="D.O.B"
+                            autocomplete="off">
+                        <input type="number" class="form-control ml-1" id="block" name="block" placeholder="block"
+                            min="1" max="5">
+                        <input type="text" class="form-control ml-1" id="assignment" name="assignment"
+                            placeholder="ex.TLM-Coder" required>
+                    </div>
+                </div>
+
+
+                <!-- Goals -->
+                <div class="col-md-8 mt-3 p-4 d-sm-flex ">
+                    <div class="w-100 p-0 mb-5">
+                        <table class="table table-striped table-bordered ">
+                            <thead>
+                                <th class='headerTitle text-center'>My Goals<span
+                                        class="text-secondary ml-4 fa fa-plus addSlot"></span></th>
+                            </thead>
+                            <tr>
+                                <td><input class="form-control" name="1 Goal" type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Books -->
+
+                    <div class="w-100 px-1 mb-5">
+                        <table class="table table-striped table-bordered ">
+                            <thead>
+                                <th class='headerTitle text-center'>My Books<span
+                                        class="text-secondary ml-4 fa fa-plus addSlot"></span></th>
+                            </thead>
+                            <tr>
+                                <td><input class="form-control" name="1 Book" type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <!-- Groups -->
+                <div class="col-md-8 p-4 d-sm-flex">
+                    <div class="w-100 p-0 mb-5">
+                        <table class="table table-striped table-bordered ">
+                            <thead>
+                                <th class='headerTitle text-center'>My Groups<span
+                                        class="text-secondary ml-4 fa fa-plus addSlot"></span></th>
+                            </thead>
+                            <tr>
+                                <td><input class="form-control" name="1 Goal" type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- College Classes -->
+
+                    <div class="w-100 px-1 mb-5">
+                        <table class="table table-striped table-bordered ">
+                            <thead>
+                                <th class='headerTitle text-center'>College Classes<span
+                                        class="text-secondary ml-4 fa fa-plus addSlot"></span></th>
+                            </thead>
+                            <tr>
+                                <td><input class="form-control" name="1 Book" type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+                <!-- eigth item takes 6 columns -->
+                <div class="col-md-8 m-4 text-center craft">
+                    <h5 class="headerTitle">Craft:</h5>
+
+                    <div class="align-items-baseline justify-content-center">
+                        <input type="checkbox" class="btn-check" id="check1" name='GED'>
+                        <label class="text-secondary" for="check1">GED</label>
+
+                        <input type="checkbox" class="btn-check ml-3" id="check2" name='Guitar'>
+                        <label class="text-secondary" for="check2">Guitar</label>
+
+                        <input type="checkbox" class="btn-check ml-3" id="check3" name='Coding'>
+                        <label class="text-secondary" for="check3">Coding</label>
+
+                        <input type="checkbox" class="btn-check ml-3" id="check4" name='Bible Study'>
+                        <label class="text-secondary" for="check4">Bible Study</label>
+
+                        <input type="checkbox" class="btn-check ml-3" id="check5" name='BPH'>
+                        <label class="text-secondary" for="check5">BPH</label>
+
+                        <input type="checkbox" class="btn-check ml-3" id="check6" name='Math'>
+                        <label class="text-secondary" for="check6">Math</label>
+
+                        <input type="checkbox" class="btn-check ml-3" id="check7" name='Counseling'>
+                        <label class="text-secondary" for="check7">Counseling</label>
+                        <div>
+                            <label for="">Other <span class="text-secondary fa fa-plus"></span>:</label>
+                            <input class="form-control w-25 d-inline other" type="text">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="d-flex justify-content-center col-11">
+
+                    <div class="calendar">
+                        <div class="calInstructions text-center font-weight-bold text-info mt-5">
+                            Set time slots when you're able to tutor:</div>
+                        <div class="d-flex justify-content-between">
+                            <p class="prev">Prev</p>
+                            <p class="next">Next</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <b class="calMonth "></b>
+                            <b class="calYear ml-3"></b>
+                        </div>
+                        <table class="">
+                            <thead class="text-center calHead">
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tues</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </thead>
+                            <tbody class="calBody">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+
+                <!--bio takes 6 columns -->
+                <div class="col-md-8 m-3 mb-5">
+                    <label class="headerTitle">Post a short bio:</label>
+                    <textarea type="text" class="form-control" id="bio" rows="5" placeholder="Comment..."></textarea>
+                </div>
+
+                <!-- picture takes 6 columns -->
+                <div class="col-md-8 m-3 mb-5 text-center headerTitle">
+                    <label for="pic">Choose a profile picture:</label>
+                    <input type="file" id="pic" name="pic" accept="image/png, image/jpeg" required>
+                    <img id='profileImg'>
+                </div>
+
+
+
+
+                <!-- elevent item takes 6 columns -->
+                <div class="col-md-8 d-flex justify-content-center mb-5">
+                    <button class="btn btn-primary" type="submit" id="submitForm">Submit Form</button>
+                </div>
+            </div>
+        </form>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="postLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="post">Post nfo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <div class="m-3">
+                            <div class="slotInfo">
+                                <div class="d-flex example">
+                                    <p>Example:</p>
+                                    <p class="ml-2"> 6:30-8:00 PM</p>
+                                </div>
+                                <input type="text" id="modalInp">
+                            </div>
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="submit" id="connect" data-dismiss="modal"
+                                class="btn btn-primary">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="sbFooter">
+        <p class="text-white bg-info text-center">&copy 2023 StudyBuddy, inc-All rights reserved</p>
+    </footer>
+
+    <!-- Scripts to jquery,Bootstrap,and Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="../js/calendar.js"></script>
+    <script src="../js/memory.js"></script>
+    <script src="../js/sign-up.js"></script>
+</body>
+
+</html>
