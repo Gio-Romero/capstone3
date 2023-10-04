@@ -1,1 +1,1 @@
-#capstone3
+The project’s primary objective is to establish a platform within prison facilities, facilitating connections between students and mentors, bridging the communication gap that would otherwise be insurmountable. This initiative seeks to grant everyone the opportunity to access mentors possessing valuable skills and a willingness to share their knowledge.
